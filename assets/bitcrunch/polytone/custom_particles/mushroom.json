@@ -1,0 +1,12 @@
+{
+    "render_type": "terrain",
+    "initializer": {
+        "lifetime": "20 + rand() * 20",
+        "size": "1"
+    },
+    "ticker": {
+        "dy": "DY * 1.01",
+        "alpha": "( LIFETIME - AGE ) / LIFETIME",
+        "roll": "( GAMETIME % 50 ) / 50 * 2 * pi"
+    }
+}

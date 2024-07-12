@@ -1,0 +1,4 @@
+{
+    "targets": ["minecraft:short_grass", "minecraft:tall_grass"],
+    "offset_type": "none"
+}

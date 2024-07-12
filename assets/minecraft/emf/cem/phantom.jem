@@ -1,0 +1,80 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0.5, -5, 0],
+			"boxes": [
+				{"coordinates": [-3, 3, -8, 6, 4, 8], "textureOffset": [0, 10]}
+			]
+		},
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0.5, -3.75, 8],
+			"boxes": [
+				{"coordinates": [-4, 3, -14, 8, 4, 6], "textureOffset": [0, 0]}
+			]
+		},
+		{
+			"part": "left_wing",
+			"id": "left_wing",
+			"invertAxis": "xy",
+			"translate": [2.5, -7, 8],
+			"boxes": [
+				{"coordinates": [-9, 5, -8, 6, 2, 8], "textureOffset": [24, 16]}
+			]
+		},
+		{
+			"part": "left_wing_tip",
+			"id": "left_wing_tip",
+			"invertAxis": "xy",
+			"translate": [8.5, -7, 8],
+			"boxes": [
+				{"coordinates": [-23, 5, -8, 14, 2, 8], "textureOffset": [16, 26]}
+			]
+		},
+		{
+			"part": "right_wing",
+			"id": "right_wing",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-2.5, -7, 8],
+			"boxes": [
+				{"coordinates": [3, 5, -8, 6, 2, 8], "textureOffset": [24, 16]}
+			]
+		},
+		{
+			"part": "right_wing_tip",
+			"id": "right_wing_tip",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [-8.5, -7, 8],
+			"boxes": [
+				{"coordinates": [9, 5, -8, 14, 2, 8], "textureOffset": [16, 26]}
+			]
+		},
+		{
+			"part": "tail",
+			"id": "tail",
+			"invertAxis": "xy",
+			"translate": [0.5, -7, -1],
+			"boxes": [
+				{"coordinates": [-2, 5, 0, 4, 2, 6], "textureOffset": [2, 22]}
+			]
+		},
+		{
+			"part": "tail2",
+			"id": "tail2",
+			"invertAxis": "xy",
+			"translate": [0.5, -6.5, -7],
+			"boxes": [
+				{"coordinates": [-1, 5, 6, 2, 2, 6], "textureOffset": [4, 30]}
+			]
+		}
+	]
+}
