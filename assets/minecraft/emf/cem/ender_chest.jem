@@ -1,0 +1,72 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"texture": "textures/entity/chest/ender.png",
+	"models": [
+		{
+			"part": "base",
+			"id": "base",
+			"invertAxis": "xy",
+			"translate": [-8, 0, -8],
+			"rotate": [-180, 0, 0],
+			"boxes": [
+				{"coordinates": [-7, -10, 9, 14, 10, 14], "textureOffset": [2, 0]}
+			],
+			"submodels": [
+				{
+					"id": "lid2",
+					"invertAxis": "xy",
+					"translate": [0, -10, 9],
+					"boxes": [
+						{"coordinates": [-7, -4, 0, 14, 4, 14], "textureOffset": [2, 24]}
+					]
+				},
+				{
+					"id": "knob2",
+					"invertAxis": "xy",
+					"translate": [0, -5, 22.51],
+					"texture": "textures/entity/chest/ender_eye.png",
+					"textureSize": [20, 6],
+					"boxes": [
+						{
+							"coordinates": [-5, -3, -0.5, 10, 6, 1],
+							"uvNorth": [0, 0, 10, 6],
+							"uvSouth": [10, 0, 20, 6]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"lid2.rx": "round(lid.rx / (pi / 4)) * pi / 4",
+					"knob2.ry": "if(sqrt(pow(player_pos_x-pos_x-0.5, 2) + pow(player_pos_y-pos_y, 2) + pow(player_pos_z-pos_z-0.5, 2)) < 5, 0, pi)"
+				}
+			]
+		},
+		{
+			"part": "lid",
+			"id": "lid",
+			"invertAxis": "xy",
+			"translate": [-8, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "knob",
+			"id": "knob",
+			"invertAxis": "xy",
+			"translate": [-8, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		}
+	]
+}

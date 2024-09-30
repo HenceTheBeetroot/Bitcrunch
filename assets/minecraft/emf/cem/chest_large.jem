@@ -1,0 +1,130 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [64, 64],
+	"texture": "textures/entity/chest/normal_right.png",
+	"models": [
+		{
+			"part": "base_left",
+			"id": "base_left",
+			"invertAxis": "xy",
+			"translate": [-16, 0, -8],
+			"rotate": [-180, 0, 0],
+			"texture": "textures/entity/chest/normal_left.png",
+			"boxes": [
+				{"coordinates": [0, -10, 9, 15, 10, 14], "textureOffset": [0, 18]}
+			],
+			"submodels": [
+				{
+					"id": "lid_left2",
+					"invertAxis": "xy",
+					"translate": [0, -10, 9],
+					"boxes": [
+						{"coordinates": [0, -4, 0, 15, 4, 14], "textureOffset": [0, 0]}
+					],
+					"submodels": [
+						{
+							"id": "latch_left",
+							"invertAxis": "xy",
+							"translate": [1, -2, 14],
+							"boxes": [
+								{"coordinates": [4, 0, 0.01, 4, 8, 0], "textureOffset": [0, 0]}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"lid_left2.rx": "round(lid_left.rx / (pi / 4)) * pi / 4",
+					"latch_left.rx": "lid_left2.rx*0.75"
+				}
+			]
+		},
+		{
+			"part": "base_right",
+			"id": "base_right",
+			"invertAxis": "xy",
+			"translate": [0, 0, -8],
+			"rotate": [-180, 0, 0],
+			"boxes": [
+				{"coordinates": [-15, -10, 9, 15, 10, 14], "textureOffset": [0, 18]}
+			],
+			"submodels": [
+				{
+					"id": "lid_right2",
+					"invertAxis": "xy",
+					"translate": [0, -10, 9],
+					"boxes": [
+						{"coordinates": [-15, -4, 0, 15, 4, 14], "textureOffset": [0, 0]}
+					],
+					"submodels": [
+						{
+							"id": "latch_right",
+							"invertAxis": "xy",
+							"translate": [1, -2, 14],
+							"boxes": [
+								{"coordinates": [-10, 0, 0.01, 4, 8, 0], "textureOffset": [0, 0]}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"this.rx": 0,
+					"lid_right2.rx": "round(lid_right.rx / (pi / 4)) * pi / 4",
+					"latch_right.rx": "lid_right2.rx*0.75"
+				}
+			]
+		},
+		{
+			"part": "lid_left",
+			"id": "lid_left",
+			"invertAxis": "xy",
+			"translate": [-16, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "lid_right",
+			"id": "lid_right",
+			"invertAxis": "xy",
+			"translate": [0, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "knob_left",
+			"id": "knob_left",
+			"invertAxis": "xy",
+			"translate": [-16, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		},
+		{
+			"part": "knob_right",
+			"id": "knob_right",
+			"invertAxis": "xy",
+			"translate": [0, -9, -7],
+			"rotate": [-180, 0, 0],
+			"animations": [
+				{
+					"this.rx": 0
+				}
+			]
+		}
+	]
+}

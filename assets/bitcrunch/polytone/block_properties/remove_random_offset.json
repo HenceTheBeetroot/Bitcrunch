@@ -1,4 +1,6 @@
 {
-    "targets": ["minecraft:short_grass", "minecraft:tall_grass"],
+    "targets": ["short_grass", "tall_grass",
+                "allium", "azure_bluet", "blue_orchid", "cornflower", "dandelion", "lily_of_the_valley", "oxeye_daisy", "poppy", "torchflower", "orange_tulip", "pink_tulip", "red_tulip", "white_tulip", "wither_rose",
+                "lilac", "peony", "pitcher_plant", "rose_bush", "sunflower"],
     "offset_type": "none"
 }
